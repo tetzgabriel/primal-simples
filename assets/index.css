@@ -1,0 +1,63 @@
+body {
+    background-color: #33658A;
+    color: #2B3A48;
+    height: 100vh;
+}
+
+.navbar {
+    color: white;
+    background-color: #F26419;
+}
+
+.btn, .dropdown-menu {
+    margin-top: 20px;
+    background-color: #43AA8B;
+}
+
+.btn-submit {
+    background-color: #A7BED3;
+    align-self: center;
+    width: 100px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.inputs, .error-section, .result-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.error-section, .result-section, .error-section2 {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input {
+    text-align: center;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    margin-top: 15px;
+}
+
+.bot {
+    background-color: #A7BED3;
+    height: 70px;
+}
