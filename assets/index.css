@@ -61,3 +61,20 @@ body {
     background-color: #A7BED3;
     height: 70px;
 }
+
+.maior {
+    flex-direction: column;
+    display: flex;
+}
+
+.menor {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.igual {
+    flex-direction: column;
+    display: flex;
+}

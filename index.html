@@ -29,27 +29,71 @@
                 </select>
                 <label for="calculo" style="color: white;">f(x)=</label>
                 <input type="number" placeholder="0" id="x1" onchange="handleX1()">
-                <span>X1 + </span>
+                <span>x1 + </span>
                 <input type="number" placeholder="0" id="x2" disabled onChange="handleX2()">
-                <span>X2</span>
+                <span>x2</span>
             </div>
         </div>
         
         <div class="inputs" id="matrix" style="display: none;">
             <div class="inputGroup">
-                <input type="number" placeholder="x11" id="x11">
-                <input type="number" placeholder="x21" id="x21">
-                <input type="number" placeholder="x31" id="x31">
+                <div>
+                    <input type="number" placeholder="0" id="x11">
+                    <span>&nbsp;x1 + &nbsp;</span>
+                </div>
+                <div>
+                    <input type="number" placeholder="0" id="x12">
+                    <span>&nbsp;x1 + &nbsp;</span>
+                </div>
+                <div>
+                    <input type="number" placeholder="0" id="x13">
+                    <span>&nbsp;x1 + &nbsp;</span>
+                </div>
             </div>
             <div class="inputGroup">
-                <input type="number" placeholder="x12" id="x12">
-                <input type="number" placeholder="x22" id="x22">
-                <input type="number" placeholder="x32" id="x32">
+                <div>
+                    <input type="number" placeholder="0" id="x21">
+                    <span>&nbsp;x2&nbsp;</span>
+                </div>
+                <div>
+                    <input type="number" placeholder="0" id="x22">
+                    <span>&nbsp;x2&nbsp;</span>
+                </div>
+                <div>
+                    <input type="number" placeholder="0" id="x23">
+                    <span>&nbsp;x2&nbsp;</span>
+                </div>
+            </div>
+            <div id="menor" class="menor">
+                <div class="dropdown">
+                    <select name="calculo" id="simbolo1" onchange="getSimbolo1(this)">
+                        <option value="" default></option>
+                        <option value="menor"> <= </option>
+                        <option value="maior"> >= </option>
+                        <option value="igual"> = </option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="calculo" id="simbolo2" onchange="getSimbolo2(this)">
+                        <option value="" default></option>
+                        <option value="menor"> <= </option>
+                        <option value="maior"> >= </option>
+                        <option value="igual"> = </option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="calculo" id="simbolo3" onchange="getSimbolo3(this)">
+                        <option value="" default></option>
+                        <option value="menor"> <= </option>
+                        <option value="maior"> >= </option>
+                        <option value="igual"> = </option>
+                    </select>
+                </div>
             </div>
             <div class="inputGroup">
-                <input type="number" placeholder="x13" id="x13">
-                <input type="number" placeholder="x23" id="x23">
-                <input type="number" placeholder="x33" id="x33">
+                    <input type="number" placeholder="0" id="res1">
+                    <input type="number" placeholder="0" id="res2">
+                    <input type="number" placeholder="0" id="res3">
             </div>
         </div>
 

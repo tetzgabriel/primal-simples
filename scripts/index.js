@@ -3,6 +3,10 @@ var calculo = "";
 var x1;
 var x2;
 
+var simbolo1;
+var simbolo2;
+var simbolo3;
+
 
 function getCalculo(selectObject) {
     calculo = selectObject.value;
@@ -18,6 +22,23 @@ function handleX1() {
 function handleX2() {
     x2 = document.getElementById("x2").value;
     console.log(x2);
+
+    createTable();
+}
+
+function getSimbolo1(selectObject) {
+    simbolo1 = selectObject.value;
+    console.log(simbolo1);
+}
+
+function getSimbolo2(selectObject) {
+    simbolo2 = selectObject.value;
+    console.log(simbolo2);
+}
+
+function getSimbolo3(selectObject) {
+    simbolo3 = selectObject.value;
+    console.log(simbolo3);
 }
 
 function createTable() {
