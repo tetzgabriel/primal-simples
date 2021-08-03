@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/index.css">
     <link rel="icon" type="image/png" href="https://img.icons8.com/office/16/000000/math.png"/>
-    <title>Segundo Trabalho Computacional</title>
+    <title>Terceiro Trabalho Computacional</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjs@9.4.3/lib/browser/math.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
         <div class="container-fluid">
           <span class="navbar-brand">
-            Cálculo de Autovalores de Matrizes
+            Cálculo do método primal simplex
           </span>
         </div>
     </nav>
@@ -22,17 +22,16 @@
     <form class="form">
         <div class="dropdown-section">
             <div class="dropdown">
-                <label for="pontos" style="color: white;">Precisão: </label>
-                <input type="number" placeholder="e" id="precisao" onchange="getPrecision(this)">
-            </div>
-            <div class="dropdown">
-                <label for="calculo" style="color: white;">Método: </label>
                 <select name="calculo" id="calculo" onchange="getCalculo(this)">
                     <option value="" default></option>
-                    <option value="potencia">Potência</option>
-                    <option value="inversa">Potência Inversa</option>
-                    <option value="qr">Método QR</option>
+                    <option value="max">max</option>
+                    <option value="min">min</option>
                 </select>
+                <label for="calculo" style="color: white;">f(x)=</label>
+                <input type="number" placeholder="0" id="x1" onchange="handleX1()">
+                <span>X1 + </span>
+                <input type="number" placeholder="0" id="x2" disabled onChange="handleX2()">
+                <span>X2</span>
             </div>
         </div>
         

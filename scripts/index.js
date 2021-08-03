@@ -1,33 +1,23 @@
-var calculo = "central";
-var precisao = 0;
+var calculo = "";
 
-var x11;
-var x12;
-var x13;
-var x21;
-var x22;
-var x23;
-var x31;
-var x32;
-var x33;
+var x1;
+var x2;
 
-var ant_aprox1;
-var ant_aprox2;
-var ant_aprox3;
-
-function getPontos(selectObject) {
-    pontos = selectObject.value;
-}
 
 function getCalculo(selectObject) {
     calculo = selectObject.value;
-    
-    createTable();
+    console.log(calculo);
 }
 
-function getPrecision(selectObject) {
-    precisao = selectObject.value;
-    console.log(precisao)
+function handleX1() {
+    x1 = document.getElementById("x1").value;
+    console.log(x1);
+    document.getElementById("x2").disabled = false;
+}
+
+function handleX2() {
+    x2 = document.getElementById("x2").value;
+    console.log(x2);
 }
 
 function createTable() {
